@@ -1,0 +1,15 @@
+.container {
+  display:grid; /* grid 지정 */
+  padding:10px;
+  grid-template-columns:repeat(3, 1fr); /* repeat(몇 번, 크기) 열 */
+  grid-auto-rows: minmax(150px, auto); /* minmax(최소 높이, 최소 높이 보다 높을 경우 자동으로 늘어나게 하기)*/
+  grid-gap: 10px; /* 셀 사이의 공백 */
+  /* grid-template-areas: -> 왼쪽의 속성을 사용해주면 더 편리하게 영역을 나눠줄 수 있다. */
+}
+
+.item2 { /* 특정 셀만 지정해서 영역 정해주기 */
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end:3;
+}
