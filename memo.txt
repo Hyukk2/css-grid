@@ -1,0 +1,7 @@
+* html은 간단하게 말해서 box와 item으로 나뉜다.
+box : header, footer, nav, aside, main, section, artice, div, span, form
+item : a, button, input, label, img, video, audio, map, canvas, table
+
+* item에서도 두 가지로 나뉜다.
+block : 엘리먼트의 종류가 block이면, 옆에 공간이 있어도, 옆에 붙지않고 다음 줄에 나타난다.
+inline : 엘리먼트의 종류가 inline이면, 옆에 공간이 있을 시, 옆에 붙는다.
