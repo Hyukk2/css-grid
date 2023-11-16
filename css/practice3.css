@@ -1,0 +1,37 @@
+div{
+    width: 80px;
+    height: 80px;
+    margin-bottom:20px;
+    background: red;
+}
+
+.container{
+    background: yellow;
+    left: 20px;
+    top: 20px;
+    /* position: static; position의 기본값은 static이다. */
+    position: relative;
+}
+
+.box{
+    background: blue;
+    left: 20px;
+    top: 20px;
+    /* position: relative;  브라우저에서 보면 기존의 위치에서 왼쪽 위를 기준으로 20px씩 움직인게 확인된다. */
+    /* position: absolute;  브라우저에서 보면 .box 클래스를 품고 있는 .container 클래스 범위를 기준으로 왼쪽 위 20px씩 움직인게 확인된다. */
+    /* position: fixed;  브라우저에서 보면 .container 클래스 범위에서 완전히 벗어난다. 전체 브라우저 화면을 기준으로 왼쪽 위 20px씩 움직인게 확인된다.*/
+    position: sticky; /* 원래*/
+}
+
+/* div{
+    background: green;
+    display: inline-block;  엘리먼트에 내용이 없어도 색을 입힐 시, 브라우저에 범위가 나온다. 
+    display: inline; 엘리먼트에 내용이 없을 시, 브라우저에 범위가 나오지 않는다. inline은 컨텐츠 자체만 꾸며준다.
+     
+} */
+
+/* span{
+    background: pink;
+    display: block;
+}  */
+

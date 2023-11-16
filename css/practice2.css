@@ -1,0 +1,32 @@
+/* selector{
+    property:value;
+} */
+
+* {
+    color:green;
+}
+
+li {
+    color:blue;
+}
+
+#special {
+    color:pink;
+}
+
+.red {
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    padding:20px; /* padding : 컨텐츠 안에 들어가는 범위 */
+    margin:20px; /* margin : 컨텐츠 밖에 들어가는 범위*/
+}
+
+button:hover{
+    color:red;
+    background: beige;
+}
+
+a[href="naver.com"]{ /* <a>태그들 중, 속성 href이 있고, "naver.com"이 들어간 a태그만 css 적용 */
+    color:purple;
+}
