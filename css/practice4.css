@@ -1,0 +1,69 @@
+.container{
+    background: beige;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* 기본값으로 row이다. */ 
+    /* flex-direction: row-reverse; 오른쪽에서 왼쪽으로 
+    flex-direction: column;  왼쪽위에서 아래로 
+    flex-direction: column-reverse; 왼쪽아래에서 위로  */
+    /* flex-wrap: nowrap;  기본값으로 nowrap이다. item이 더 추가되어도 한줄에 들어가게 한다.*/
+    flex-wrap: wrap;  /* item이 한줄에 꽉 차게되면 자동적으로 다음라인으로 배치된다. */
+    /* flex-flow: column nowrap;  flex-flow 프로퍼티를 이용하여 한번에 value를 작성할 수 있다. */
+
+    /* justify-content -> 중심축을 기준으로 item들을 배치한다. */
+    justify-content: flex-start; /* 기본값 이다. */
+    justify-content: flex-end; /* 중심축 반대로 item들이 배치된다. */ 
+    justify-content: center; /* item 중앙 배치 */
+    justify-content: space-around; /* item들 사이에 space가 들어간다. */
+    justify-content: space-evenly; /* item들 사이를 똑같은 간격으로 배치 */
+    justify-content: space-between; /* 왼쪽 끝, 오른쪽 끝 item은 화면에 딱 달라붙게하고, 중간 item들 사이에 간격 배치*/
+    /* align-items -> 반대축을 기준으로 item들을 배치한다. */
+    align-items: center;
+    align-items: baseline; /* item들중 하나의 item의 범위만 클 경우, baseline에 맞춰서 중간에 배치하게 한다. */
+    /* align-content -> 반대축을 기준으로 item들을 배치한다.*/
+    align-content: space-between;
+    /* align-content: center; */
+}
+
+.item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.item1{
+    background: red;
+    flex-grow: 0; /* 기본값은 0이다. container가 점점 커졌을 때 어떻게 행동하는지 지정하는 프로퍼티이다. */
+    /* flex-grow: 1;  value값을 줄 경우, container의 크기가 커지면 거기에 맞춰서, 너비가 자동으로 container에 맞춰서 넓어진다.
+    flex-shrink: 0;  기본값은 0이다. container가 점점 작아졌을 때 어떻게 행동하는지 지정하는 프로퍼티이다. 
+    flex-basis: auto;  기본값은 auto이다. grow와 shrink의 value에 맞춰서 item이 변형된다. 
+    flex: 2 2 auto;  grow, shrink, basis 동시에 value값을 넣을 수 있다.  */
+    align-self: center; /* item별로 정렬 가능. */
+}   
+.item2{
+    background: orange;
+}
+.item3{
+    background: yellow;
+}
+.item4{
+    background: green;
+}
+.item5{
+    background: blue;
+}
+.item6{
+    background: darkblue;
+}
+.item7{
+    background: purple;
+}
+.item8{
+    background: pink;
+}
+.item9{
+    background: brown;
+}
+.item10{
+    background: white
+}
