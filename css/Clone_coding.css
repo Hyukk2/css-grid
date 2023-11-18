@@ -11,7 +11,8 @@ a{
     color:white;
 }
 
-@media screen and (min-width: 900px){
+/* 너비가 740px 이하일 때 */
+@media screen and (max-width: 740px){
     /* 네비게이션 바 */
     .nav_var{
         display: flex;
@@ -40,7 +41,7 @@ a{
     /* 동영상 정보 */
     .vid_information{
         margin: 0;
-        padding: 12px 12px;
+        padding: 12px 12px 0px 12px;
     }
     .vid_information .vid_hash{
         font-size: 15px;
@@ -114,5 +115,159 @@ a{
     } 
     .vid_information .vid_name{
         padding-left: 10px;
+    }
+    /* 다른 동영상 */
+    .vid_different .vid_diff_information{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding: 0px 12px 12px 12px;
+    }
+    .vid_different .vid_diff_information .vid_diff_ifm_List{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .vid_different .vid_diff_information .vid_diff_imf_List2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .vid_different .vid_diff_video{
+        width: 250px;
+        height: 150px;
+    }
+}
+/* 너비가 740px 이상 일 때*/
+@media screen and (min-width:740px) {
+    .nav_var{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 12px;
+        background-color: black;
+    }
+    /* 네이게이션 로고색 변경 */
+    .nav_var .nav_logo{
+        color:red;
+    }
+
+    .nav_var li i{
+        color:white;
+    }
+
+    .nav_var ul{
+        margin: 0;
+        padding: 0;
+    }
+    .video{
+        width: 100%;
+        height: 300px;
+    }
+    /* 동영상 정보 */
+    .vid_information{
+        margin: 0;
+        padding: 12px 12px 0px 12px;
+    }
+    .vid_information .vid_hash{
+        font-size: 15px;
+        color:skyblue;
+        padding: 5px 0;
+    }
+    .vid_information .vid_title{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .vid_information .vid_views{
+        font-size: 12px;
+        color: gray;
+    }
+    /* 동영상 정보 아이콘들 */
+    .vid_information .vid_functions_icons{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 6%;
+    }
+
+    .vid_information .vid_func_like{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vid_information .vid_func_hate{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vid_information .vid_func_share{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vid_information .vid_func_save{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vid_information .vid_func_report{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .vid_information  i  span{
+        padding-top: 6px;
+    }
+    /* 동영상 주인 정보 */
+    .vid_information .vid_Writer_ifm{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .vid_information .vid_Writer_ifm li{
+        display: flex;
+        align-items: center;
+    }
+    .vid_Writer_ifm .vid_profile{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    } 
+    .vid_information .vid_name{
+        padding-left: 10px;
+    }
+    /* 다른 동영상 */
+    .vid_different .vid_diff_information{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding: 0px 12px 12px 12px;
+    }
+    .vid_different .vid_diff_information .vid_diff_ifm_List{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .vid_different .vid_diff_information .vid_diff_imf_List2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .vid_different .vid_diff_video{
+        width: 250px;
+        height: 150px;
+    }
+    body .vid_func_diff_container{
+        display: flex;
+        flex-direction: row;
     }
 }
