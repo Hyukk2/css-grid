@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/Clone coding.css">
+    <link rel="stylesheet" href="../css/Clone_coding.css">
     <script src="https://kit.fontawesome.com/bb4dbdab3a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,53 +27,61 @@
         </ul>
     </nav>
     <!-- 2. 동영상 -->
-    <video class="video" src="../video/love.개발바닥.mp4" autoplay></video>
+    <video class="video" src="../video/사랑합니다. 개발바닥.mp4" autoplay></video>
     <!-- 3. 동영상 정보 -->
-    <ul class="vid_information">
-        <!-- 동영상 해쉬태그 -->
-        <li class="vid_hash">
-            #개발바닥 #결혼 #부러움
-        </li>
-        <!-- 동영상 제목 -->
-        <li class="vid_title">
-            <span>결혼은 즐거운가 이것저것 아무거나 막 길게 늘어쓰기. 뭔 말을 써야할지 도저히 잘 모르겠네요. </span>
-            <i class="fa-solid fa-arrow-down"></i>
-        </li>
-        <!-- 동영상 조회수 -->
-        <li class="vid_views">
-            1.5만회
-        </li>
-        <!-- 동영상 기능 -->
-        <li class="vid_functions_icons">
-            <i class="fa-solid fa-thumbs-up vid_func_like"><span>3k</span></i>
-            <i class="fa-solid fa-thumbs-down vid_func_hate"><span>0</span></i>
-            <i class="fa-solid fa-share vid_func_share"><span>Share</span></i>
-            <i class="fa-solid fa-plus vid_func_save"><span>Save</span></i>
-            <I class="fa-solid fa-flag vid_func_report"><span>Report</span></i>
-        </li>
-        <!-- 동영상 주인 정보 -->
-        <hr>
-        <div class="vid_Writer_ifm">
-            <li>
-                <img class="vid_profile"src="../img/안경.png" alt="프로필">
-                <span class="vid_name">hyuk2</span> 
-            </li>   
-                <span class="vid_subscribe">SUBSCRIBE</span>
-        </div>
-        <hr>
-    </ul>
-    <!-- 4. 다른 동영상 -->
-    <container class="vid_different">
-        <span>Up next</span>
-        <ul class="vid_diff_information">
-            <li><img src="../img/안경.png" alt="다음 동영상"></li>
-            <li class="vid_diff_ifm_List">
-                <div class="vid_diff_ifm_title">안경이란 좋은 물건이다.</div>
-                <div class="vid_diff_ifm_Writer">hyuk2</div>
-                <div class="vid_diff_ifm_views">320회</div>
+    <div class="vid_func_diff_container">
+        <ul class="vid_information">
+            <!-- 동영상 해쉬태그 -->
+            <li class="vid_hash">
+                #개발바닥 #결혼 #부러움
             </li>
-            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            <!-- 동영상 제목 -->
+            <li class="vid_title">
+                <span>결혼은 즐거운가 이것저것 아무거나 막 길게 늘어쓰기. 뭔 말을 써야할지 도저히 잘 모르겠네요. </span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </li>
+            <!-- 동영상 조회수 -->
+            <li class="vid_views">
+                1.5만회     
+            </li>
+            <!-- 동영상 기능 -->
+            <li class="vid_functions_icons">
+                <i class="fa-solid fa-thumbs-up vid_func_like"><span>3k</span></i>
+                <i class="fa-solid fa-thumbs-down vid_func_hate"><span>0</span></i>
+                <i class="fa-solid fa-share vid_func_share"><span>Share</span></i>
+                <i class="fa-solid fa-plus vid_func_save"><span>Save</span></i>
+                <I class="fa-solid fa-flag vid_func_report"><span>Report</span></i>
+            </li>
+            <!-- 동영상 주인 정보 -->
+            <hr>
+            <div class="vid_Writer_ifm">
+                <li>
+                    <img class="vid_profile"src="../img/안경.png" alt="프로필">
+                    <span class="vid_name">hyuk2</span> 
+                </li>   
+                    <span class="vid_subscribe">SUBSCRIBE</span>
+            </div>
+            <hr>
         </ul>
-    </container>
+    <!-- 4. 다른 동영상 -->
+        <div class="vid_diff_container">
+            <span style="color: gray; padding-left: 12px;">Up next</span>
+            <container class="vid_different">
+                <ul class="vid_diff_information">
+                    <div style="margin-top: 8px;" class="vid_diff_ifm_List">
+                        <li>
+                            <img class="vid_diff_video" src="../img/안경.png" alt="다음 동영상">
+                        </li>
+                        <li class="vid_diff_imf_List2">    
+                            <div style="font-size: 16px;font-weight: bold;display: inline;"class="vid_diff_ifm_title">안경이란 좋은 물건이다.</div>
+                            <div style="font-size: 12px; color: gray;"class="vid_diff_ifm_title"class="vid_diff_ifm_Writer">hyuk2</div>
+                            <div style="font-size: 12px; color: gray;"class="vid_diff_ifm_title"class="vid_diff_ifm_views">320회</div>
+                        </li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    </div>
+                </ul>
+            </container>
+        </div>
+    </div>
 </body>
 </html>
