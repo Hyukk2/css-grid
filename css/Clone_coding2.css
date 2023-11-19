@@ -1,0 +1,178 @@
+:root{
+    /* color */
+    --white-color:#FFFFFF;
+    --black-color: #070600;
+    --blue-color: #334FD0;
+    --red-color: #F80031;
+    --grey-dark-color: #8E8E8E;
+    --grey-light-color: #BEBEBE;
+
+    /* size */
+    --padding:12px;
+    --padding-bottom:8px;
+    --avatar-size:40px;
+
+    /* font size */
+    --font-large:16px;
+    --font-medium:14px;
+    --font-small:12px;
+    --font-micro:10px
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border:none;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+/* 유튜브 헤더 */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: var(--padding);
+}
+
+header .logo .fa-youtube{
+    font-size: var(--font-large);
+    color: var(--red-color);
+}
+
+header .icons .search{
+    padding-right: var(--padding);
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+/* 비디오 플레이어 */
+.player{
+    position: sticky;
+    top: 0; /* sticky를 사용하려면, 어디에서부터 붙어있을지 지정해줘야한다. */
+    text-align: center;
+    background-color: var(--black-color);
+}
+
+.player video{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+
+/* 비디오 정보(비디오 데이터) */
+.video_info{
+    padding: var(--padding);
+}
+
+.video_info .data .hashtags{
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.video_info .data .hashtags li{
+    margin-right: 10px;
+    color: var(--blue-color);
+    font-size:var(--font-large);
+}
+
+.video_info .titleAndButton{
+    padding-bottom: var(--padding-bottom);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-large);
+}
+
+.video_info .titleAndButton .moreBtn{
+    height: 100%;
+}
+
+.video_info .views{
+    margin-bottom: 8px;;
+}
+
+.video_info .views span{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+/* 비디오 정보(비디오 아이콘) */
+.video_info .actions{
+    display: flex;
+    justify-content: space-around;
+    padding: var(--padding);
+}
+
+.video_info .actions li{
+    display: flex;
+    flex-direction: column;
+}
+
+.video_info .actions li button{
+    padding-bottom: var(--padding-bottom);
+}
+
+.video_info .actions li button i{
+    color: var(--grey-dark-color);
+}
+
+.video_info .actions li span{
+    color: var(--grey-dark-color);
+}
+
+/* 비디오 정보(비디오 채널) */
+.channel{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.channel .data{
+    display: flex;
+}
+
+.channel .data img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+}
+
+.channel .data .info{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 0 0 6px;
+}
+
+.channel .data .info .writer{
+    font-size: var(--font-medium);
+}
+
+.channel .data .info .numSubscribe{
+    height: 100%;
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
+}
+
+.channel .subscribe{
+    padding-top: 10px;
+}
+
+.channel .subscribe .subscribeBtn{
+    color: var(--red-color);
+}
