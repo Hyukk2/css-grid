@@ -138,6 +138,7 @@ header ul{
 .channel{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px 0 5px 0;
     border-top: 1px solid var(--grey-light-color);
     border-bottom: 1px solid var(--grey-light-color);
@@ -145,6 +146,7 @@ header ul{
 
 .channel .data{
     display: flex;
+    align-items: center;
 }
 
 .channel .data img{
@@ -156,7 +158,7 @@ header ul{
 .channel .data .info{
     display: flex;
     flex-direction: column;
-    padding: 3px 0 0 6px;
+    padding-left: 6px;
 }
 
 .channel .data .info .writer{
@@ -169,10 +171,73 @@ header ul{
     color: var(--grey-dark-color);
 }
 
-.channel .subscribe{
-    padding-top: 10px;
-}
-
 .channel .subscribe .subscribeBtn{
     color: var(--red-color);
+}
+
+/* 업데이트 비디오 */
+.UpNext{
+    padding: 0 12px 12px 12px;
+}
+
+.UpNext > span{
+    color: var(--grey-dark-color);
+}
+
+.UpNext .UpNext_box{
+    display: flex;
+    padding-top: 10px
+}
+
+.UpNext .UpNext_box .UpNext_img{
+    flex: 1 1 35%;
+}
+.UpNext .UpNext_box .UpNext_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.UpNext .UpNext_box .UpNext_img{
+    flex: 1 1 60%;
+}
+
+.UpNext .UpNext_box .UpNext_incon{
+    flex: 1 1 5%;
+}
+
+.UpNext .UpNext_box .UpNext_list ul{
+    margin-left: 8px;
+}
+.UpNext .UpNext_box .UpNext_list .Title{
+    font-size: var(--font-medium);
+}
+
+.UpNext .UpNext_box .UpNext_list .writer{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.UpNext .UpNext_box .UpNext_list .views{
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
+}
+
+.infoAndUpnext{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:740px){
+    .infoAndUpnext{
+        flex-direction: row;
+    }
+
+    .infoAndUpnext .video_info{
+        flex: 1 1 50%;
+    }
+
+    .infoAndUpnext .UpNext{
+        flex: 1 1 50%;
+        margin-top: 6px;
+    }
 }
